@@ -9,13 +9,14 @@ import Heading from "./components/Heading";
 import StarProduct from "./components/StarProduct";
 import HotAccessoriesMenu from "./components/HotAccessoriesMenu.js";
 import HotAccessories from "./components/HotAccessories";
+import ProductReviews from "./components/ProductReviews";
+import Videos from "./components/Videos";
 
 function App() {
   return (
     <Router>
       <PreNavbar />
       <Navbar />
-
       <Slider start={data.banner.start} />
       <Offers offer={data.offer} />
       <Heading text="STAR PRODUCTS" />
@@ -77,6 +78,9 @@ function App() {
         ></Route>
       </Routes>
       <Heading text="PRODUCT REVIEWS" />
+      <ProductReviews ProductReviews={data.productReviews} />
+      <Heading text="VIDEOS" />
+      <Videos Videos={data.videos} />s
     </Router>
   );
 }
