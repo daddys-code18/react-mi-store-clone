@@ -80,7 +80,8 @@ function App() {
       <Heading text="PRODUCT REVIEWS" />
       <ProductReviews ProductReviews={data.productReviews} />
       <Heading text="VIDEOS" />
-      <Videos Videos={data.videos} />s
+      <Videos Videos={data.videos} />
+      <Heading text="IN THE PRESS" />
     </Router>
   );
 }
