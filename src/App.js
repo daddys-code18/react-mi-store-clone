@@ -1,11 +1,14 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
 import PreNavbar from "./components/PreNavbar";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <Router>
       <PreNavbar />
-    </div>
+      <Navbar />
+    </Router>
   );
 }
 
